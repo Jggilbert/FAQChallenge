@@ -1,0 +1,24 @@
+.accordion {
+    background-color: hsl(240, 5%, 91%);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: justify;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: hsl(240, 5%, 91%);
+    text-emphasis: hsl(14, 88%, 65%);
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: hsl(240, 5%, 91%);
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out
+  }
