@@ -38,7 +38,8 @@ Background gradient:
 
 ### Body Copy
 
-- Font size: 12px
+- Font size: 12px 
+
 
 ### Font
 

@@ -1,6 +1,10 @@
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
 .accordion {
     background-color: hsl(240, 5%, 91%);
-    color: #444;
+    font-size: 12px;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -10,19 +14,37 @@
     transition: 0.4s;
   }
 
+    .accordion:after {
+      content: '\005E';
+      font-size: 13px;
+      color: hsl(14, 88%, 65%);
+      float: right;
+      margin-left: 5px;
+    }
+    .active:after {
+      content: "\02C5";
+      color: hsl(14, 88%, 65%);
+      font-size: 13px;
+    }
+  
+
   .active, .accordion:hover {
     background-color: hsl(240, 5%, 91%);
     text-emphasis: hsl(14, 88%, 65%);
   }
 
   .panel {
+    font-size: 12px;
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out
   }
-body{
-  background-color: hsl(273, 75%, 66%), hsl(240, 73%, 65%);
+  #header{
+    font-weight: 700;
+  }
 
-}
+  .body{
+  background-color: hsl(273, 75%, 66%), hsl(240, 73%, 65%);
+  }
