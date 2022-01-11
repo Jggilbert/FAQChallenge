@@ -3,9 +3,9 @@ html {
 }
 
 .accordion {
-    background-color: hsl(240, 5%, 91%);
     font-size: 12px;
     cursor: pointer;
+    margin: 3px;
     padding: 18px;
     width: 100%;
     text-align: justify;
@@ -32,11 +32,13 @@ html {
     background-color: hsl(240, 5%, 91%);
     text-emphasis: hsl(14, 88%, 65%);
   }
+  hr.solid {
+    border-bottom: 2px solid hsl(240, 5%, 91%);
 
+  }
   .panel {
     font-size: 12px;
     padding: 0 18px;
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out
@@ -45,6 +47,8 @@ html {
     font-weight: 700;
   }
 
-  .body{
+body{
   background-color: hsl(273, 75%, 66%), hsl(240, 73%, 65%);
+  margin: 35px;
+  padding: 1rem;
   }

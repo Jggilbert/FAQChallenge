@@ -1,6 +1,5 @@
 function showPanel(){
 var acc = document.getElementsByClassName("accordion");
-// var panel = document.getElementsByClassName("panel");
 var i;
 
   for (i = 0; i < acc.length; i++) 
@@ -15,3 +14,7 @@ var i;
   });
   }
 }
+
+// function myOverFunction() {
+//   document.getElementsByClassName("accordion").innerHTML = 
+// }
