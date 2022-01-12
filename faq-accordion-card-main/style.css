@@ -1,22 +1,21 @@
 html {
   font-family: 'Kumbh Sans', sans-serif;
-  
+  background-image: linear-gradient( #6565e7,
+   #af67e9);
+  overflow: no repeat;
 }
-/* .border{
-  background: linear-gradient(top to bottom(273, 75%, 66%), (240, 73%, 65%));
-} */
+
 
 .accordion {
     color: hsl(238, 29%, 16%);
     font-size: 12px;
     cursor: pointer;
-    margin: 3px;
-    padding: 18px;
-    width: 100%;
+    margin: 1px;
+    padding: 20px;
+    width: 45%;
     text-align: justify;
-    border: none;
-    outline: none;
     transition: 0.4s;
+    overflow: hidden;
   }
 
     .accordion:after {
@@ -24,7 +23,7 @@ html {
       font-size: 13px;
       color: hsl(14, 88%, 65%);
       float: right;
-      margin-left: 5px;
+      margin-left: 2px;
     }
     .active:after {
       content: '\005E';
@@ -36,12 +35,19 @@ html {
   .active, .accordion:hover {
     color: hsl(14, 88%, 65%);
   }
+  
+  .active, .accordion:focus {
+    color:hsl(238, 29%, 16%);
+    font-weight: 700;
+  }
+
+  
   hr.solid {
     border-bottom: 2px solid hsl(240, 5%, 91%);
 
   }
   .panel {
-    color: hsl(238, 29%, 16%);
+    color: hsl(237, 12%, 33%);
     font-size: 12px;
     padding: 0 18px;
     max-height: 0;
@@ -49,11 +55,12 @@ html {
     transition: max-height 0.2s ease-out
   }
   #header{
+    font-size: 28px;
     font-weight: 700;
-    color: hsl(238, 29%, 16%);
+    color: #1d1e35;
   }
 
 body{
-  margin: 35px;
-  padding: 1rem;
+  margin: 45px;
+  overflow: hidden;
   }
