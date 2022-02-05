@@ -3,6 +3,14 @@ html {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+.col-container {
+  display: table; 
+  width: 80%
+}
+
+.col {
+  display:table-cell;
+}
 
 .accordion {
     color: hsl(238, 29%, 16%);
@@ -14,7 +22,7 @@ html {
     text-align: justify;
     box-shadow: 0 10px 10px 0 hsl(237, 12%, 33%);
     transition: transform 100ms box-shadow 100ms;
-    overflow: hidden;
+    overflow: clip;
   }
 
     .accordion:after {
@@ -60,8 +68,8 @@ html {
   }
 
 body{
-  background-image: linear-gradient(#af67e9, #6565e7);
-   padding: 20px;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+   padding: 30px;
   overflow: hidden;
-  margin: 50px;
+  margin: 25px;
   }
